@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-UK">
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Arsen's website</title>
 </head>
 <body>
 <header>
-    <h1>Galiev Arsen Yurgizovich</h1>
-    <nav>
-        <a href="https://t.me/rosehipbloom" target="_blank">Telegram</a>
-        <a href="https://github.com/projacktor" target="_blank">GitHub</a>
-        <a href="mailto:a.galiev@innopolis.university" target="_blank">Mail</a>
+    <nav class="contacts">
+        <div class="single_contact">
+            <a href="https://t.me/rosehipbloom" target="_blank">
+                <img class="shake-icon" alt="telegram_icon" src="assets/telegramIco.svg"/>
+                Telegram</a>
+        </div>
+        <div class="single_contact">
+            <a href="https://github.com/projacktor" target="_blank">
+                <img class="shake-icon" alt="github_icon" src="assets/githubIco.svg"/>
+                GitHub</a>
+        </div>
+        <div class="single_contact">
+            <a href="mailto:a.galiev@innopolis.university" target="_blank">
+            <img class="shake-icon" alt="at_icon" src="assets/mailIco.svg"/>
+                Mail</a>
+        </div>
     </nav>
 </header>
 <main>
-
+    <div class="headers">
+        <h1>Galiev <span>Arsen</span>'s</h1>
+        <h2><span>private</span> page</h2>
+    </div>
+    <div class="typing_container">
+        <div id="typing_text"></div>
+    </div>
 </main>
+<script src="typing.js"></script>
 </body>
 </html>
