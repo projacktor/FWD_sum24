@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function insertImg() {
     const img1 = document.createElement("img");
-    img1.src = "assets/Li7ico.svg";
+    img1.src = "static/assets/svg/Li7ico.svg";
     img1.alt = "Li7";
     img1.style.width = "70px"; // Adjust size as needed
     img1.style.margin = "10px";
     img1.style.paddingRight = "18rem";
 
     const img2 = document.createElement("img");
-    img2.src = "assets/IU_icon.svg";
+    img2.src = "static/assets/svg/IU_icon.svg";
     img2.alt = "IU";
     img2.style.width = "84px"; // Adjust size as needed
     img2.style.margin = "10px";
