@@ -1,132 +1,184 @@
-a, p, h1, h2, h3, h4, h5, li, ul, label, input, select {
-    font-family: var(--font-family);
-    --font-family: "Inter", sans-serif;
-    --second-family: "Manrope", sans-serif;
-    --third-family: "Stolzl", sans-serif;
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul,
+label,
+input,
+select {
+  font-family: var(--font-family);
+  --font-family: "Inter", sans-serif;
+  --second-family: "Manrope", sans-serif;
+  --third-family: "Stolzl", sans-serif;
 }
 
 body {
-    background: linear-gradient(
-            45deg,
-            #800080,
-            #FF8C00
-    );
-    min-height: 100vh;
-    margin: 0;
-    padding: 0 4rem;
+  background: linear-gradient(45deg, #800080, #ff8c00);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 4rem;
 }
 
 header {
-    position: fixed;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* padding-left: 1em; */
+  padding-top: 20px;
+  z-index: 1000;
+
+  a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 1em;
-    padding-top: 20px;
-    z-index: 1000;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 12px;
 
-
-    a {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-        cursor: pointer;
-        font-size: 1.5rem;
-        border-radius: 20px;
-        padding: 12px;
-
-        img {
-            margin-right: 1rem;
-        }
+    img {
+      margin-right: 1rem;
     }
+  }
 }
 
 main {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 0;
-    left: 40px;
-    width: 90%;
-    height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  top: 15px;
+  /* left: 40px; */
+  /* width: 90%; */
+  height: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 5rem;
 }
 
 .headers {
-    margin-top: 2.5rem;
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        position: relative;
-        top: -3rem;
-        left: 0.5rem;
-        font-size: 3rem;
-    }
-    span {
-        color: #DDA0DD;
-    }
+  transform: translateY(3rem);
+  h2 {
+    position: relative;
+    top: -3rem;
+    left: 0.5rem;
+    font-size: 3rem;
+  }
+}
+
+.pink {
+  color: #dda0dd;
 }
 
 .contacts {
-    position: relative;
-    top: -0.5em;
-    width: 50%;
+  position: relative;
+  top: -0.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15rem;
+  .single_contact {
     display: flex;
     flex-direction: row;
     align-items: center;
-    .single_contact {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 5rem;
-        img {
-            width: 40px;
-        }
-        a {
-            margin-left: 1em;
-        }
+    margin-right: 5rem;
+    img {
+      width: 40px;
     }
+    a {
+      margin-left: 1em;
+    }
+  }
 }
 
 .typing_container {
-    width: 40%;
-    height: 50%;
-    padding: 20px;
-    margin-top: -2rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+  width: 35%;
+  height: 50%;
+  min-height: 25rem;
+  /*margin-bottom: 4rem;*/
+  padding: 20px;
+  /* margin-top: -2rem; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
-#typing_text {
-    white-space: pre-wrap;
-    font-size: 20px;
-
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono",
-    "Courier New",
-    monospace;
-
-    padding-top: 2.5rem;
-    padding-left: 0.5rem;
+.black {
+  background-color: black;
 }
 
+.white {
+  background-color: white;
+}
+
+#typing_text_stack {
+  background-color: black;
+  color: #fff;
+  white-space: pre-wrap;
+  font-size: 20px;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  padding-top: 2.5rem;
+  padding-left: 0.5rem;
+}
+
+#typing_text_greeting {
+  background-color: #fff;
+  color: black;
+  white-space: pre-wrap;
+  font-size: 20px;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  padding-top: 2.5rem;
+
+}
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateY(-5px); }
-    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
 }
 
-
 .shake-icon:hover {
-    animation: shake 0.3s;
+  animation: shake 0.3s;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
 }
