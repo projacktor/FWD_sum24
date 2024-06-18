@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.7.5"
+  }
+}
