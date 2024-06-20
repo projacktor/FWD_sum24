@@ -46,7 +46,7 @@ main {
     align-items: center;
     gap: 32px;
     height: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .container {
@@ -256,4 +256,31 @@ h1 {
 .gallery_pictures .gallery_img:not(:first-child),
 .gallery_desc .gallery_para:not(:first-child) {
     display: none;
+}
+
+.switch_comics {
+    /*background: #dda0df;*/
+    background: linear-gradient(45deg, #ff8c00, #C71585);
+    width: 19rem;
+    height: 8rem;
+    border-color: black;
+    border-radius: 40px;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.switch_comics:hover {
+    width: 25rem;
+    height: 14rem;
+    border-color: black;
+    background: linear-gradient(45deg, #C71585, #ff8c00);
+    margin-top: -9rem;
+    a {
+        font-size: 30px;
+    }
 }
