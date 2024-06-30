@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 scip_index++;
             }
 
-            if (scip_index === 3 && !imagesInserted) {
+            if (scip_index === 7 && !imagesInserted) {
                 insertImg();
                 imagesInserted = true;
             }
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function insertImg(): void {
-        const img1 = document.getElementById('li7') as HTMLElement;
+            const img1 = document.getElementById('li7') as HTMLElement;
         img1.classList.remove('hidden');
         const img2 = document.getElementById('iu') as HTMLElement;
         img2.classList.remove('hidden');
