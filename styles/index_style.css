@@ -275,12 +275,9 @@ h1 {
 }
 
 .switch_comics:hover {
-    width: 25rem;
-    height: 14rem;
-    border-color: black;
+    opacity: 70%;
     background: linear-gradient(45deg, #C71585, #ff8c00);
-    margin-top: -9rem;
     a {
-        font-size: 30px;
+        opacity: 70%;
     }
 }
