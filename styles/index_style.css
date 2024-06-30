@@ -60,6 +60,7 @@ h1 {
 
 .headers {
     margin-top: -2rem;
+
     h2 {
         position: relative;
         top: -3rem;
@@ -108,7 +109,32 @@ h1 {
 }
 
 .greeting_cont {
+    display: flex;
+    flex-direction: column;
     margin-top: -6rem;
+
+    .hidden {
+        display: none;
+    }
+
+    #typing_img {
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 485px;
+        #li7 {
+            width: 70px;
+        }
+
+        #iu {
+            width: 84px;
+        }
+        img {
+            margin: 10px;
+        }
+    }
 }
 
 .black {
@@ -125,19 +151,20 @@ h1 {
 
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-
-    padding-top: 2.5rem;
 }
 
 #typing_text_stack {
     background-color: black;
     color: #fff;
     padding-left: 0.5rem;
+    padding-top: 2.5rem;
 }
 
 #typing_text_greeting {
+    order: 0;
     background-color: #fff;
     color: black;
+    padding-top: 1rem;
 }
 
 @keyframes shake {
@@ -170,6 +197,7 @@ h1 {
     align-items: center;
     width: 60%;
     margin-top: -3rem;
+
     h2 {
         margin-top: -2rem;
     }
@@ -204,6 +232,7 @@ h1 {
     align-items: center;
     padding: 0 2rem;
     margin-top: -2rem;
+
     .gallery_arrows {
         order: 1;
     }
@@ -226,13 +255,16 @@ h1 {
     h2, p {
         color: white;
     }
+
     h2 {
         font-size: 3rem;
     }
+
     p {
         font-size: 1.5em;
         text-align: center;
     }
+
     a {
         color: #D2691E;
     }
@@ -266,6 +298,7 @@ h1 {
     border-color: black;
     border-radius: 40px;
     cursor: pointer;
+
     a {
         text-decoration: none;
         font-size: 20px;
@@ -277,6 +310,7 @@ h1 {
 .switch_comics:hover {
     opacity: 70%;
     background: linear-gradient(45deg, #C71585, #ff8c00);
+
     a {
         opacity: 70%;
     }
