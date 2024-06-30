@@ -1,5 +1,5 @@
 import { Comic } from "./Comic";
-import { formatDistanceToNow } from "date-fns";
+import { formatDistanceToNow } from 'date-fns';
 
 document.addEventListener("DOMContentLoaded", () => {
     const email: string = "a.galiev@innopolis.university";
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             console.error("Error fetching id", error);
             alert("Look to console");
+            return undefined;
         }
     }
 
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             console.error("Error fetching data", error);
             alert("Look to console");
+            return undefined;
         }
     }
 
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const dateElem = document.createElement("time");
         const date = new Date(parseInt(comics.year), parseInt(comics.month) - 1, parseInt(comics.day));
         dateElem.textContent = formatDistanceToNow(date, { addSuffix: true });
-        dateElem.dateTime = date.toISOString().split("T")[0];
+        dateElem.dateTime = date.toISOString().split("T")[0] || "";
         comicElem.appendChild(dateElem);
 
         const transcript = document.createElement("p");
@@ -85,8 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
-
-
 
     async function loadComics(): Promise<void> {
         const comicsId = await getComicsId();
