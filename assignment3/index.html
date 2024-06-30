@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <link rel="stylesheet" href="./public/styles/index_style.css" />
-  <link rel="icon" href="./assets/img/channel_icon-round.png">
+  <link rel="stylesheet" href="public/styles/index_style.css" />
+  <link rel="icon" href="assets/img/channel_icon-round.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arsen's website</title>
 </head>
 <body>
@@ -43,7 +44,12 @@
   </div>
 
   <div class="typing_container white container greeting_cont">
-    <div id="typing_text_greeting" class="typing"></div>
+    <div id="typing_img" class="hidden">
+      <img alt="Lyceum picture" src="assets/svg/Li7ico.svg" id="li7"/>
+      <img alt="IU picture" src="assets/svg/IU_icon.svg" id="iu"/>
+    </div>
+    <div id="typing_text_greeting" class="typing">
+    </div>
   </div>
 
   <div class="typing_container black container">
@@ -117,8 +123,8 @@
     </div>
   </div>
 
-  <button class="switch_comics" onclick="window.location.href='./comic.html'">
-    <a href="./comic.html">
+  <button class="switch_comics" onclick="window.location.href='/FWD_sum24/comic.html'">
+    <a href="comic.html">
       Go to comics
     </a>
   </button>

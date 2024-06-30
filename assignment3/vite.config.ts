@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+    base: "/FWD_sum24/",
     build: {
         outDir: 'dist',
         rollupOptions: {

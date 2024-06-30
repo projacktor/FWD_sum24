@@ -45,21 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function insertImg(): void {
-        const img1 = document.createElement("img") as HTMLImageElement;
-        img1.src = "../assets/svg/Li7ico.svg";
-        img1.alt = "Li7";
-        img1.style.width = "70px";
-        img1.style.margin = "10px";
-        img1.style.paddingRight = "18rem";
-
-        const img2 = document.createElement("img") as HTMLImageElement;
-        img2.src = "../assets/svg/IU_icon.svg";
-        img2.alt = "IU";
-        img2.style.width = "84px";
-        img2.style.margin = "10px";
-
-        typingTextElement.appendChild(img1);
-        typingTextElement.appendChild(img2);
+        const img1 = document.getElementById('li7') as HTMLElement;
+        img1.classList.remove('hidden');
+        const img2 = document.getElementById('iu') as HTMLElement;
+        img2.classList.remove('hidden');
     }
     type();
 });
