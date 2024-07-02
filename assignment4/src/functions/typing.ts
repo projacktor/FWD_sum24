@@ -1,68 +1,65 @@
-let typingStackInitialized = false;
-let typingGreetingInitialized = false;
+import {useEffect, useState} from "react";
 
-export function initTypingStack() {
-    if (typingStackInitialized) return;
-    typingStackInitialized = true;
+export function useTypingEffect(text: string, typingSpeed: number) {
+    const [displayedText, setDisplayedText] = useState("");
+    const [index, setIndex] = useState(0);
 
-    const text: string =
-        "I have a year of freelance experience in GUI and front-end development.\n\n" +
-        "- Python\n- Java\n- React\n- Qt\n" +
-        "\nMy English is B2, it was approved by TOEFL iBT exam.\n" +
-        "\nNow I am interested in Full-stack development and Systems administration.";
-    const typingTextElement = document.getElementById("typing_text_stack") as HTMLElement;
-    let index = 0;
+    useEffect(() => {
+        let typingTimeout: number | undefined;
 
-    function type(): void {
-        if (index < text.length) {
-            typingTextElement.innerHTML += text[index];
-            index++;
-            setTimeout(type, 45);
+        function type() {
+            if (index < text.length) {
+                setDisplayedText((prev) => prev + text[index]);
+                setIndex((prev) => prev + 1);
+                typingTimeout = setTimeout(type, typingSpeed);
+            }
         }
-    }
 
-    if (typingTextElement) {
-        type();
-    }
+        if (index < text.length) {
+            typingTimeout = setTimeout(type, typingSpeed);
+        }
+
+        return () => clearTimeout(typingTimeout);
+    }, [index, text, typingSpeed]);
+
+    return displayedText;
 }
 
-export function initTypingGreeting() {
-    if (typingGreetingInitialized) return;
-    typingGreetingInitialized = true;
+export function useTypingEffectWithImages(
+    text: string,
+    typingSpeed: number,
+    triggerIndex: number,
+    onTrigger: () => void
+) {
+    const [displayedText, setDisplayedText] = useState("");
+    const [index, setIndex] = useState(0);
+    const [scipIndex, setScipIndex] = useState(0);
+    const [imagesInserted, setImagesInserted] = useState(false);
 
-    const text: string =
-        "Hi there! I am Arsen Galiev, also known as Projacktor or\nRosehipbloom.\n\n" +
-        "\nKazan Liceum 7 graduated and a student of Innopolis University.\n" +
-        "\n\nMy hobbies are sports, coding, and reading.\n\n";
-    const typingTextElement = document.getElementById("typing_text_greeting") as HTMLElement;
-    let index = 0;
-    let scip_index = 0;
-    let imagesInserted = false;
+    useEffect(() => {
+        let typingTimeout: number | undefined;
 
-    function type(): void {
-        if (index < text.length) {
-            typingTextElement.innerHTML += text[index];
-            if (text[index] === "\n") {
-                scip_index++;
+        function type() {
+            if (index < text.length) {
+                setDisplayedText((prev) => prev + text[index]);
+                if (text[index] === "\n") {
+                    setScipIndex((prev) => prev + 1);
+                }
+                if (scipIndex === triggerIndex && !imagesInserted) {
+                    onTrigger();
+                    setImagesInserted(true);
+                }
+                setIndex((prev) => prev + 1);
+                typingTimeout = window.setTimeout(type, typingSpeed);
             }
-
-            if (scip_index === 9 && !imagesInserted) {
-                insertImg();
-                imagesInserted = true;
-            }
-            index++;
-            setTimeout(type, 25);
         }
-    }
 
-    function insertImg(): void {
-        const img1 = document.getElementById('li7') as HTMLElement;
-        img1.classList.remove('hidden');
-        const img2 = document.getElementById('iu') as HTMLElement;
-        img2.classList.remove('hidden');
-    }
+        if (index < text.length) {
+            typingTimeout = window.setTimeout(type, typingSpeed);
+        }
 
-    if (typingTextElement) {
-        type();
-    }
+        return () => clearTimeout(typingTimeout);
+    }, [index, scipIndex, imagesInserted, text, typingSpeed, triggerIndex, onTrigger]);
+
+    return displayedText;
 }

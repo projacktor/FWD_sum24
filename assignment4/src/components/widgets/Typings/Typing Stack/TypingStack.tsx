@@ -1,17 +1,18 @@
 import "./style.css";
 import "../typing_style.css";
 
-import {useEffect} from "react";
-import {initTypingStack} from "../../../../functions/typing.ts";
+import {useTypingEffect} from "../../../../functions/typing.ts";
 
 function TypingStack() {
+    const text = "I have a year of freelance experience in GUI and front-end development.\n\n" +
+        "- Python\n- Java\n- React\n- Qt\n" +
+        "\nMy English is B2, it was approved by TOEFL iBT exam.\n" +
+        "\nNow I am interested in Full-stack development and Systems administration.";
 
-    useEffect(() => {
-        initTypingStack();
-    }, []);
+    const displayedText = useTypingEffect(text, 45);
     return (
         <div className="typing_container container" id="stack">
-            <div id="typing_text_stack" className="typing"></div>
+            <div id="typing_text_stack" className="typing">{displayedText}</div>
         </div>
     );
 }

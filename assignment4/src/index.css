@@ -19,3 +19,7 @@ main {
   height: 100%;
   min-height: 100vh;
 }
+
+.pink {
+  color: #dda0dd;
+}

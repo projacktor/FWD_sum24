@@ -1,18 +1,16 @@
-h1 {
-    font-size: 5rem;
-}
-
-.headers {
-    margin-top: -2rem;
-
-    h2 {
-        position: relative;
-        top: -3rem;
-        left: 0.5rem;
-        font-size: 3rem;
+.home {
+    h1 {
+        font-size: 5rem;
     }
-}
 
-.pink {
-    color: #dda0dd;
+    .headers {
+        margin-top: -2rem;
+
+        h2 {
+            position: relative;
+            top: -3rem;
+            left: 0.5rem;
+            font-size: 3rem;
+        }
+    }
 }
