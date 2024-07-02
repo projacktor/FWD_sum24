@@ -7,6 +7,7 @@ import {initTypingGreeting} from "../../../../functions/typing.ts";
 import li7Ico from "../../../../assets/svg/Li7ico.svg";
 import iuIco from "../../../../assets/svg/IU_icon.svg";
 
+
 function TypingGreeting() {
     useEffect(() => {
         initTypingGreeting();
