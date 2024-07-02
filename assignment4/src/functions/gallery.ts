@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function GalleryScroller() {
     const leftMover = document.querySelector(".moveLeft") as HTMLElement;
     const rightMover = document.querySelector(".moveRight") as HTMLElement;
     const scroller = document.querySelector(".scroller") as HTMLElement;
@@ -53,4 +53,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     showItem(currentIndex);
     changeScrollerColor();
-});
+}
