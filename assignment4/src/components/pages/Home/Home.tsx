@@ -3,6 +3,7 @@ import "./style.css";
 import TypingGreeting from "../../widgets/Typings/Tiyping Greeting/TypingGreeting.tsx";
 import TypingStack from "../../widgets/Typings/Typing Stack/TypingStack.tsx";
 import ProjectsGallery from "../../widgets/Projects gallery/ProjectsGallery.tsx";
+import SwitchButton from "../../shared/Switch button/SwitchButton.tsx";
 
 function Home() {
     return (
@@ -18,9 +19,7 @@ function Home() {
 
             <ProjectsGallery/>
 
-            <button className="switch_comics" onClick={() => window.location.href = '/FWD_sum24/comic/'}>
-                <a href="comic.html">Go to comics</a>
-            </button>
+            <SwitchButton page="comic"/>
         </main>
     );
 }
