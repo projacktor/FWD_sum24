@@ -1,18 +1,16 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-// import {resolve} from "path";
+import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    svgr({
+      svgrOptions: {
+        // Optional configuration options for SVGR
+      }
+    })
+  ],
   base: "/FWD_sum24/",
-  // build: {
-  //   outDir: 'dist',
-  //   rollupOptions: {
-  //     input: {
-  //       index: resolve(__dirname, "index.html"),
-  //       comic: resolve(__dirname, "404.html"),
-  //     }
-  //   }
-  // }
 })
