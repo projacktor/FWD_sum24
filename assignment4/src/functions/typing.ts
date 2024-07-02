@@ -28,13 +28,12 @@ export function useTypingEffect(text: string, typingSpeed: number) {
 export function useTypingEffectWithImages(
     text: string,
     typingSpeed: number,
-    triggerIndex: number,
-    onTrigger: () => void
+    triggerIndex: number
 ) {
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
     const [scipIndex, setScipIndex] = useState(0);
-    const [imagesInserted, setImagesInserted] = useState(false);
+    const [imagesVisible, setImagesVisible] = useState(false);
 
     useEffect(() => {
         let typingTimeout: number | undefined;
@@ -45,21 +44,18 @@ export function useTypingEffectWithImages(
                 if (text[index] === "\n") {
                     setScipIndex((prev) => prev + 1);
                 }
-                if (scipIndex === triggerIndex && !imagesInserted) {
-                    onTrigger();
-                    setImagesInserted(true);
+                if (scipIndex === triggerIndex && !imagesVisible) {
+                    setImagesVisible(true);
                 }
                 setIndex((prev) => prev + 1);
                 typingTimeout = window.setTimeout(type, typingSpeed);
             }
         }
 
-        if (index < text.length) {
-            typingTimeout = window.setTimeout(type, typingSpeed);
-        }
+        typingTimeout = window.setTimeout(type, typingSpeed);
 
         return () => clearTimeout(typingTimeout);
-    }, [index, scipIndex, imagesInserted, text, typingSpeed, triggerIndex, onTrigger]);
+    }, [index, scipIndex, imagesVisible, text, typingSpeed, triggerIndex]);
 
-    return displayedText;
+    return { displayedText, imagesVisible };
 }
