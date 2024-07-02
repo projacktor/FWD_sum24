@@ -1,7 +1,7 @@
-import { Comic } from "./Comic";
+import { Comic } from "../interfaces/comic";
 import { formatDistanceToNow } from 'date-fns';
 
-document.addEventListener("DOMContentLoaded", () => {
+export function showComic() {
     const email: string = "a.galiev@innopolis.university";
     const api: string = 'https://fwd.innopolis.university/api/hw2';
     const comicUrl: string = 'https://fwd.innopolis.university/api/comic';
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function getComicsId(): Promise<number | undefined> {
         try {
-            const params = new URLSearchParams({ email: email });
+            const params = new URLSearchParams({email: email});
             const response = await fetch(`${api}?${params.toString()}`);
             if (!response.ok) {
                 throw new Error("Network isn't ok!");
@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const dateElem = document.createElement("time");
         const date = new Date(parseInt(comics.year), parseInt(comics.month) - 1, parseInt(comics.day));
-        dateElem.textContent = formatDistanceToNow(date, { addSuffix: true });
-        dateElem.dateTime = date.toISOString().split("T")[0] || "";
+        dateElem.textContent = formatDistanceToNow(date, {addSuffix: true});
+        dateElem.dateTime = date.toLocaleDateString() + " " + date.toISOString().split("T")[0] || "";
         comicElem.appendChild(dateElem);
 
         const transcript = document.createElement("p");
@@ -99,4 +99,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     loadComics();
-});
+}
