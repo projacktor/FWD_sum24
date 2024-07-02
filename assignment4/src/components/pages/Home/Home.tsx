@@ -19,7 +19,7 @@ function Home() {
 
             <ProjectsGallery/>
 
-            <SwitchButton page="comic"/>
+            <SwitchButton page_link="comic" page_text="comics"/>
         </main>
     );
 }
