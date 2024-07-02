@@ -1,8 +1,7 @@
 import "./style.css";
 
 import {useEffect} from "react";
-import {GalleryScroller} from "../../../functions/gallery.ts";
-
+import {useGalleryScroller, showItem, changeScrollerColor} from "../../../functions/gallery.ts";
 
 import mbtIcon from "../../../assets/projects/MBT_icon.png";
 import raIcon from "../../../assets/projects/RA_icon.svg";
@@ -11,9 +10,18 @@ import converterIcon from "../../../assets/projects/converter_icon.jpg";
 import moveArrow from "../../../assets/svg/moveArrow.svg";
 
 function ProjectsGallery() {
+    const totalItems = 4;
+    const {currentIndex, moveLeft, moveRight} = useGalleryScroller(totalItems);
+
     useEffect(()=>{
-        GalleryScroller()
-    }, [])
+        const headers = Array.from(document.querySelectorAll(".gallery_heads .gallery_header")) as HTMLElement[];
+        const images = Array.from(document.querySelectorAll(".gallery_pictures .gallery_img")) as HTMLElement[];
+        const descriptions = Array.from(document.querySelectorAll(".gallery_desc .gallery_para")) as HTMLElement[];
+        const circles = Array.from(document.querySelectorAll(".scroller circle")) as SVGCircleElement[];
+
+        showItem(currentIndex, headers, images, descriptions);
+        changeScrollerColor(currentIndex, circles);
+    }, [currentIndex])
     return (
         <div className="projects">
             <h1>My <span className="pink">projects</span></h1>
@@ -64,10 +72,10 @@ function ProjectsGallery() {
                 </div>
                 <div className="gallery_scroller">
                     <div className="gallery_arrows">
-                        <button type="button" className="moveLeft">
+                        <button type="button" className="moveLeft" onClick={moveLeft}>
                             <img className="mover leftMover" src={moveArrow as string} alt="moving Arrow"/>
                         </button>
-                        <button type="button" className="moveRight">
+                        <button type="button" className="moveRight" onClick={moveRight}>
                             <img className="mover rightMover" src={moveArrow as string} alt="moving Arrow"/>
                         </button>
                     </div>

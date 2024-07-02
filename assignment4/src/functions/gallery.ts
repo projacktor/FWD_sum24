@@ -1,14 +1,20 @@
-export function GalleryScroller() {
-    const leftMover = document.querySelector(".moveLeft") as HTMLElement;
-    const rightMover = document.querySelector(".moveRight") as HTMLElement;
-    const scroller = document.querySelector(".scroller") as HTMLElement;
+import {useState} from "react";
 
-    let currentIndex = 0;
+export function useGalleryScroller(totalItems: number) {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    function showItem(index: number): void {
-        const headers = document.querySelectorAll(".gallery_heads .gallery_header") as NodeListOf<HTMLElement>;
-        const images = document.querySelectorAll(".gallery_pictures .gallery_img") as NodeListOf<HTMLElement>;
-        const descriptions = document.querySelectorAll(".gallery_desc .gallery_para") as NodeListOf<HTMLElement>;
+    const moveLeft = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? totalItems - 1 : prevIndex - 1));
+    };
+
+    const moveRight = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === totalItems - 1 ? 0 : prevIndex + 1));
+    };
+
+    return {currentIndex, moveLeft, moveRight};
+}
+
+export function showItem(index: number, headers: HTMLElement[], images: HTMLElement[], descriptions: HTMLElement[]): void {
 
         headers.forEach((header, i) => {
             header.style.display = (i === index) ? 'block' : 'none';
@@ -21,24 +27,9 @@ export function GalleryScroller() {
         descriptions.forEach((desc, i) => {
             desc.style.display = (i === index) ? 'block' : 'none';
         });
-    }
+}
 
-    function moveLeft(): void {
-        const totalItems: number = document.querySelectorAll(".gallery_heads .gallery_header").length;
-        currentIndex = (currentIndex === 0) ? totalItems - 1 : currentIndex - 1;
-        showItem(currentIndex);
-        changeScrollerColor();
-    }
-
-    function moveRight(): void {
-        const totalItems: number = document.querySelectorAll(".gallery_heads .gallery_header").length;
-        currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
-        showItem(currentIndex);
-        changeScrollerColor();
-    }
-
-    function changeScrollerColor(): void {
-        const circles = scroller.querySelectorAll("circle") as NodeListOf<SVGCircleElement>;
+export function changeScrollerColor(currentIndex: number, circles: SVGCircleElement[]): void {
         circles.forEach((circle, index) => {
             if (index === currentIndex) {
                 circle.setAttribute("fill", "#FF00FF")
@@ -46,11 +37,4 @@ export function GalleryScroller() {
                 circle.setAttribute("fill", "#DDDDDD")
             }
         })
-    }
-
-    leftMover.addEventListener("click", moveLeft);
-    rightMover.addEventListener("click", moveRight);
-
-    showItem(currentIndex);
-    changeScrollerColor();
 }
