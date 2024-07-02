@@ -12,7 +12,7 @@ function TypingGreeting() {
         initTypingGreeting();
     }, []);
     return (
-        <div className="typing_container white container greeting_cont">
+        <div className="typing_container container greeting_cont">
             <div id="typing_img">
                 <img alt="Lyceum picture" src={li7Ico as string} id="li7" className="hidden"/>
                 <img alt="IU picture" src={iuIco as string} id="iu" className="hidden"/>

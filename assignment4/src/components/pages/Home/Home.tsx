@@ -4,6 +4,7 @@ import {useEffect} from "react";
 import {initTypingStack} from "../../../functions/typing.ts";
 
 import TypingGreeting from "../../widgets/Typings/Tiyping Greeting/TypingGreeting.tsx";
+import TypingStack from "../../widgets/Typings/Typing Stack/TypingStack.tsx";
 
 import mbtIcon from "../../../assets/projects/MBT_icon.png";
 import raIcon from "../../../assets/projects/RA_icon.svg";
@@ -12,10 +13,6 @@ import converterIcon from "../../../assets/projects/converter_icon.jpg";
 import moveArrow from "../../../assets/svg/moveArrow.svg";
 
 function Home() {
-    useEffect(() => {
-        initTypingStack();
-    }, []);
-
     return (
         <main className="home">
             <div className="headers">
@@ -25,9 +22,7 @@ function Home() {
 
             <TypingGreeting/>
 
-            <div className="typing_container black container">
-                <div id="typing_text_stack" className="typing"></div>
-            </div>
+            <TypingStack/>
 
             <div className="projects">
                 <h1>My <span className="pink">projects</span></h1>

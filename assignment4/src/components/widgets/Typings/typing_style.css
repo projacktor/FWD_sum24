@@ -11,3 +11,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
+
+.typing {
+    white-space: pre-wrap;
+    font-size: 20px;
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
