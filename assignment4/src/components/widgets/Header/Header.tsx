@@ -1,9 +1,5 @@
 import "./style.css";
 
-// import { ReactComponent as TelegramIcon } from "../../../assets/svg/telegramIco.svg";
-// import { ReactComponent as GithubIcon } from "../../../assets/svg/githubIco.svg";
-// import { ReactComponent as MailIcon } from "../../../assets/svg/mailIco.svg";
-
 import telegramIco from "../../../assets/svg/telegramIco.svg";
 import githubIco from "../../../assets/svg/githubIco.svg";
 import mailIco from "../../../assets/svg/mailIco.svg";
