@@ -18,7 +18,6 @@
 .comic:hover {
     border: 1px solid #000;
     background: linear-gradient(45deg, #9932CC, #ff8c00);
-    /*background: linear-gradient(45deg, #C71585, #ff8c00);*/
 }
 
 .comic img {
