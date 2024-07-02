@@ -18,7 +18,7 @@ function Home() {
 
             <ProjectsGallery/>
 
-            <button className="switch_comics" onClick={() => window.location.href = '/FWD_sum24/comic.html'}>
+            <button className="switch_comics" onClick={() => window.location.href = '/FWD_sum24/comic/'}>
                 <a href="comic.html">Go to comics</a>
             </button>
         </main>
