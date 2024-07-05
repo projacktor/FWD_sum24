@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import TypingGreeting from "@/components/widgets/Typings/Tiyping Greeting/TypingGreeting";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
           <h2 className={styles.h2}><span className="pink">private</span> pages</h2>
         </div>
 
+          <TypingGreeting/>
 
       </main>
   );
