@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "./page.module.css";
+import styles from "@/styles/home.module.css";
 import TypingGreeting from "@/components/widgets/Typings/Tiyping Greeting/TypingGreeting";
 import TypingStack from "@/components/widgets/Typings/Typing Stack/TypingStack";
 import ProjectsGallery from "@/components/widgets/Projects gallery/ProjectsGallery";

@@ -2,9 +2,9 @@ import style from "./style.module.css";
 
 import Image from "next/image";
 
-import telegramIco from "../../../assets/svg/telegramIco.svg";
-import githubIco from "../../../assets/svg/githubIco.svg";
-import mailIco from "../../../assets/svg/mailIco.svg";
+import telegramIco from "@/assets/svg/telegramIco.svg";
+import githubIco from "@/assets/svg/githubIco.svg";
+import mailIco from "@/assets/svg/mailIco.svg";
 
 function Header() {
     return (

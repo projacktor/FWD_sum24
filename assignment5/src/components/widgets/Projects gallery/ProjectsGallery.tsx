@@ -2,11 +2,11 @@ import {useState, useEffect} from "react";
 import style from "./style.module.css";
 import typing_style from "../Typings/typing_style.module.css";
 import {useGalleryScroller, changeScrollerColor} from "@/functions/gallery";
-import mbtIcon from "../../../assets/projects/MBT_icon.png";
-import raIcon from "../../../assets/projects/RA_icon.svg";
-import rdbIcon from "../../../assets/projects/rdb_icon.svg";
-import converterIcon from "../../../assets/projects/converter_icon.jpg";
-import moveArrow from "../../../assets/svg/moveArrow.svg";
+import mbtIcon from "@/assets/projects/MBT_icon.png";
+import raIcon from "@/assets/projects/RA_icon.svg";
+import rdbIcon from "@/assets/projects/rdb_icon.svg";
+import converterIcon from "@/assets/projects/converter_icon.jpg";
+import moveArrow from "@/assets/svg/moveArrow.svg";
 import Image from "next/image";
 
 function ProjectsGallery() {
