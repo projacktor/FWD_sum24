@@ -7,6 +7,8 @@ export default function Home() {
           <h1 className={styles.h1}>Galiev <span className="pink">Arsen</span>'s</h1>
           <h2 className={styles.h2}><span className="pink">private</span> pages</h2>
         </div>
+
+
       </main>
   );
 }

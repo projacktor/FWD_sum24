@@ -1,19 +1,16 @@
-header {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
+    /*top: 0;*/
+    /*left: 0;*/
     width: 100%;
-    padding-top: 20px;
-    z-index: 1000;
+    height: 7rem;
 }
 
 .contacts {
-    position: relative;
-    top: -0.5em;
-    width: 100%;
+    width: inherit;
+    height: inherit;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,11 +22,12 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 5rem;
+    /*margin-right: 5rem;*/
 }
 
 .single_contact img {
-    width: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .single_contact a {
@@ -49,7 +47,7 @@ header {
     margin-right: 1rem;
 }
 
-.shake-icon:hover {
+.shake_icon:hover {
     animation: shake 0.3s;
 }
 
