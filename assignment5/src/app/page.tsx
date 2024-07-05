@@ -1,3 +1,5 @@
+'use client'
+
 import styles from "./page.module.css";
 import TypingGreeting from "@/components/widgets/Typings/Tiyping Greeting/TypingGreeting";
 

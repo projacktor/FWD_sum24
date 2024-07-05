@@ -1,9 +1,10 @@
-import { useTypingEffectWithImages } from "../../../../functions/typing.ts";
-import "./style.css";
-import "../typing_style.css";
+import { useTypingEffectWithImages } from "@/functions/typing";
+import local_style from "./style.module.css";
+import typing_style from "../typing_style.module.css";
 
 import li7Ico from "../../../../assets/svg/Li7ico.svg";
 import iuIco from "../../../../assets/svg/IU_icon.svg";
+import Image from "next/image";
 
 const text = "Hi there! I am Arsen Galiev, also known as Projacktor or\nRosehipbloom.\n\n" +
     "\nKazan Liceum 7 graduated and a student of Innopolis University.\n" +
@@ -13,12 +14,12 @@ function TypingGreeting() {
     const {displayedText, imagesVisible} = useTypingEffectWithImages(text, 25, 7);
 
     return (
-        <div className="typing_container container greeting_cont">
-            <div id="typing_img">
-                <img alt="Lyceum picture" src={li7Ico as string} id="li7" className={imagesVisible ? "" : "hidden"}/>
-                <img alt="IU picture" src={iuIco as string} id="iu" className={imagesVisible ? "" : "hidden"}/>
+        <div className={`${typing_style.typing_container} ${typing_style.container} ${local_style.greeting_cont}`}>
+            <div className={local_style.typing_img}>
+                <Image alt="Lyceum picture" src={li7Ico as string} className={`${imagesVisible ? "" : local_style.hidden} ${local_style.li7}`}/>
+                <Image alt="IU picture" src={iuIco as string} className={`${imagesVisible ? "" : local_style.hidden} ${local_style.iu}`}/>
             </div>
-            <div id="typing_text_greeting" className="typing">{displayedText}</div>
+            <div id="typing_text_greeting" className={typing_style.typing}>{displayedText}</div>
         </div>
     );
 }

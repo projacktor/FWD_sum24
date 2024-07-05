@@ -1,5 +1,5 @@
 import "./style.css";
-import "../typing_style.css";
+import "../typing_style.module.css";
 
 import {useTypingEffect} from "../../../../functions/typing.ts";
 
