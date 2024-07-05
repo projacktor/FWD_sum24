@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.contacts {
+    position: relative;
+    top: -0.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15rem;
+}
+
+.single_contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.single_contact img {
+    width: 40px;
+}
+
+.single_contact a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 12px;
+    margin-left: 1em;
+}
+
+.single_contact a img {
+    margin-right: 1rem;
+}
+
+.shake-icon:hover {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateY(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}

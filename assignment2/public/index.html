@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="styles/index_style.css" />
+    <link rel="icon" href="img/channel_icon-round.png">
+    <title>Arsen's website</title>
+</head>
+<body>
+<header>
+    <nav class="contacts">
+        <address class="single_contact">
+            <a href="https://t.me/rosehipbloom" target="_blank" id="tg-link">
+                <img
+                        class="shake-icon"
+                        alt="telegram_icon"
+                        src="svg/telegramIco.svg"
+                />
+                Telegram</a
+            >
+        </address>
+        <address class="single_contact">
+            <a href="https://github.com/projacktor" target="_blank" id="gh-link">
+                <img
+                        class="shake-icon"
+                        alt="github_icon"
+                        src="svg/githubIco.svg"
+                />
+                GitHub</a
+            >
+        </address>
+        <address class="single_contact">
+            <a href="mailto:a.galiev@innopolis.university" target="_blank" id="email-link">
+                <img class="shake-icon" alt="at_icon" src="svg/mailIco.svg"/>
+                Mail</a
+            >
+        </address>
+    </nav>
+</header>
+<main>
+    <div class="headers">
+        <h1>Galiev <span class="pink">Arsen</span>'s</h1>
+        <h2><span class="pink">private</span> pages</h2>
+    </div>
+
+    <div class="typing_container white container greeting_cont">
+        <div id="typing_text_greeting" class="typing"></div>
+    </div>
+
+    <div class="typing_container black container">
+        <div id="typing_text_stack" class="typing"></div>
+    </div>
+
+    <div class="projects">
+        <h1>My <span class="pink">projects</span></h1>
+        <h2>from <span class="pink">GitHub</span></h2>
+        <div class="projects_gallery container">
+            <div class="gallery">
+                <div class="gallery_heads">
+                    <h2 class="gallery_header">MetaBacTrack</h2>
+                    <h2 class="gallery_header">Respiratory activity</h2>
+                    <h2 class="gallery_header">ReadingDataBase</h2>
+                    <h2 class="gallery_header">Converter bot</h2>
+                </div>
+                <div class="gallery_pictures">
+                    <img class="gallery_img" alt="mbt_icon" src="projects/MBT_icon.png" width="400px">
+                    <img class="gallery_img" alt="RA_icon" src="projects/RA_icon.svg" width="400px">
+                    <img class="gallery_img" alt="rdb_icon" src="projects/rdb_icon.svg" width="400px"/>
+                    <img class="gallery_img" alt="converter_icon" src="projects/converter_icon.jpg" width="350px"/>
+                </div>
+                <div class="gallery_desc">
+                    <p class="gallery_para">Metabolic Bacterial Tracking is an interface for optimization of calculating
+                        Excel tables which are gotten from the special device.
+                        <br/><span class="gallery_desc_stack">Stack:</span> Python + PySide6 + Excel
+                        <br/><a href="https://github.com/projacktor/biolog"
+                                target="_blank"
+                        >GitHub repo</a></p>
+                    <p class="gallery_para">Respiratory activity is the interface for calculating
+                        respiratory activity of the soil with Excel tables.
+                        The program is registered as a Result of Intellectual Activity by Kazan Federal University.
+                        <br/><span class="gallery_desc_stack">Stack:</span> Python + PyQt5 + Excel
+                        <br/><a href="https://github.com/projacktor/Soil_respiratory_activity_GUI"
+                                target="_blank"
+                        >GitHub repo</a></p>
+                    <p class="gallery_para">RBD is the bot that was made for helping high school students in essay writing.
+                        The bot has an interface
+                        for relating with a Google Sheet where students can find lots of information about school
+                        program books.
+                        <br/><span class="gallery_desc_stack">Stack:</span> Python + GoogleAPI + Telegram
+                        <br/><a href="https://github.com/projacktor/telegram_RDB_bot"
+                                target="_blank"
+                        >GitHub repo</a></p>
+                    <p class="gallery_para">The project provides a bot as interface for downloading audio tracks from YouTube videos
+                        <br/><span class="gallery_desc_stack">Stack:</span> Python + Telegram + YouTubeAPI
+                        <br/><a href="https://github.com/projacktor/Telegram_Audio-Video_bot"
+                                target="_blank"
+                        >GitHub repo</a></p>
+                </div>
+            </div>
+            <div class="gallery_scroller">
+                <div class="gallery_arrows">
+                    <button type="button" class="moveLeft">
+                        <img class="mover leftMover" src="svg/moveArrow.svg" alt="moving Arrow"/>
+                    </button>
+                    <button type="button" class="moveRight">
+                        <img class="mover rightMover" src="svg/moveArrow.svg" alt="moving Arrow"/>
+                    </button>
+                </div>
+                <div class="gallery_pointer">
+                    <svg class="scroller" width="110" height="10" viewBox="0 0 110 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="5" r="5" fill="#DDDDDD"/>
+                        <circle cx="55" cy="5" r="5" fill="#DDDDDD"/>
+                        <circle cx="80" cy="5" r="5" fill="#DDDDDD"/>
+                        <circle cx="105" cy="5" r="5" fill="#DDDDDD"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="switch_comics" onclick="window.location.href='comic.html'">
+        <a href="/FWD_sum24/comic.html">
+            Go to comics
+        </a>
+    </button>
+</main>
+<script src="js/typing.js"></script>
+<script src="js/gallery.js"></script>
+<noscript>You need to turn on JavaScript to see all content!</noscript>
+</body>
+</html>
