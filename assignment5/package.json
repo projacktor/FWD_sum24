@@ -2,12 +2,13 @@
   "name": "assignment5",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Projacktor.github.io/FixR",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "prettier --check . && eslint .",
-    "deploy": "bun run build && gh-pages -d dist",
+    "deploy": "bun run build && gh-pages -d .next",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

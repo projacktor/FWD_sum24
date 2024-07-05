@@ -5,7 +5,7 @@ export function useTypingEffect(text: string, typingSpeed: number) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let typingTimeout: number | undefined;
+    let typingTimeout: ReturnType<typeof setTimeout>;
 
     function type() {
       if (index < text.length) {
@@ -36,7 +36,7 @@ export function useTypingEffectWithImages(
   const [imagesVisible, setImagesVisible] = useState(false);
 
   useEffect(() => {
-    let typingTimeout: number | undefined;
+    let typingTimeout: ReturnType<typeof setTimeout>;
 
     function type() {
       if (index < text.length) {
@@ -48,11 +48,11 @@ export function useTypingEffectWithImages(
           setImagesVisible(true);
         }
         setIndex((prev) => prev + 1);
-        typingTimeout = window.setTimeout(type, typingSpeed);
+        typingTimeout = setTimeout(type, typingSpeed);
       }
     }
 
-    typingTimeout = window.setTimeout(type, typingSpeed);
+    typingTimeout = setTimeout(type, typingSpeed);
 
     return () => clearTimeout(typingTimeout);
   }, [index, scipIndex, imagesVisible, text, typingSpeed, triggerIndex]);
