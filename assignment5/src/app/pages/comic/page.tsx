@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { getComicsId, getComics } from "@/functions/comics";
 import { formatDistanceToNow } from 'date-fns';
-import SwitchButton from "@/components/shared/Switch button/SwitchButton.tsx";
+import SwitchButton from "@/components/shared/Switch button/SwitchButton";
 import { Comic } from "@/interfaces/comic";
 
 import style from "./page.module.css";

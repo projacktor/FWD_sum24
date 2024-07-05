@@ -4,7 +4,7 @@ import style from "@/styles/not-found.module.css";
 
 import pic from "@/assets/svg/404.svg";
 
-function NotFound(props) {
+function NotFound() {
     return (
         <main className={style.notFound}>
             <h1>404</h1>

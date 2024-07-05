@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "prettier --check . && eslint .",
     "deploy": "bun run build && gh-pages -d dist"
   },
   "dependencies": {
     "date-fns": "^3.6.0",
     "next": "14.2.4",
+    "prettier": "^3.3.2",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.33.4"
