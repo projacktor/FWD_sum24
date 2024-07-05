@@ -6,20 +6,20 @@
     border-color: black;
     border-radius: 40px;
     cursor: pointer;
+}
 
-    a {
-        text-decoration: none;
-        font-size: 20px;
-        color: black;
-        cursor: pointer;
-    }
+.switch_comics a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
 }
 
 .switch_comics:hover {
     opacity: 70%;
     background: linear-gradient(45deg, #C71585, #ff8c00);
+}
 
-    a {
-        opacity: 70%;
-    }
+.switch_comics:hover a {
+    opacity: 70%;
 }

@@ -1,4 +1,5 @@
-import "./style.css";
+import style from "./style.module.css";
+import Link from "next/link";
 
 interface SwitchButtonProps {
     page_link: string;
@@ -7,8 +8,8 @@ interface SwitchButtonProps {
 
 function SwitchButton({ page_link, page_text }: SwitchButtonProps) {
     return (
-        <button className="switch_comics" onClick={() => (window.location.href = `/FWD_sum24/${page_link}`)}>
-            <a>{page_text}</a>
+        <button className={style.switch_comics} onClick={() => (window.location.href = `${page_link}`)}>
+            <Link href="/">{page_text}</Link>
         </button>
     );
 }
