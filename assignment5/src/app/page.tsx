@@ -22,7 +22,7 @@ export default function Home() {
 
             <ProjectsGallery/>
 
-            <SwitchButton page_link={"/"} page_text={"main"}/>
+            <SwitchButton page_link={"/pages/comic"} page_text={"Comic"}/>
         </main>
     );
 }

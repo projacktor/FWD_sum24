@@ -9,7 +9,7 @@ interface SwitchButtonProps {
 function SwitchButton({ page_link, page_text }: SwitchButtonProps) {
     return (
         <button className={style.switch_comics} onClick={() => (window.location.href = `${page_link}`)}>
-            <Link href="/">{page_text}</Link>
+            <Link href={page_link}>{page_text}</Link>
         </button>
     );
 }
