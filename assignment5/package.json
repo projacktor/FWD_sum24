@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --check . && eslint .",
-    "deploy": "bun run build && gh-pages -d dist"
+    "deploy": "bun run build && gh-pages -d dist",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "date-fns": "^3.6.0",

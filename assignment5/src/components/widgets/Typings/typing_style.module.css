@@ -1,20 +1,20 @@
 .typing_container {
-    width: 30rem;
-    min-height: 28rem;
-    padding: 20px;
+  width: 30rem;
+  min-height: 28rem;
+  padding: 20px;
 }
 
 .container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    /*background: #000000;*/
-    color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /*background: #000000;*/
+  color: #ffffff;
 }
 
 .typing {
-    white-space: pre-wrap;
-    font-size: 20px;
+  white-space: pre-wrap;
+  font-size: 20px;
 
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
 }

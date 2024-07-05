@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Header from "../components/widgets/Header/Header";
-import "../styles/globals.css";
-import Head from "next/head";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Header from '../components/widgets/Header/Header';
+import '../styles/globals.css';
+import Head from 'next/head';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Arsen's web-site",
@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-          <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <body className={inter.className}>
-      <Header/>
-      {children}
+        <Header />
+        {children}
       </body>
     </html>
   );

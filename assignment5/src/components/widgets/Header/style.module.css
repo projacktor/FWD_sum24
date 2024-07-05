@@ -1,64 +1,72 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /*top: 0;*/
-    /*left: 0;*/
-    width: 100%;
-    height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*top: 0;*/
+  /*left: 0;*/
+  width: 100%;
+  height: 7rem;
 }
 
 .contacts {
-    width: inherit;
-    height: inherit;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15rem;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15rem;
 }
 
 .single_contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /*margin-right: 5rem;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*margin-right: 5rem;*/
 }
 
 .single_contact img {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 .single_contact a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    padding: 12px;
-    margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 12px;
+  margin-left: 1em;
 }
 
 .single_contact a img {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .shake_icon:hover {
-    animation: shake 0.3s;
+  animation: shake 0.3s;
 }
 
 @keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-        transform: translateY(-5px);
-    }
-    20%, 40%, 60%, 80% {
-        transform: translateX(5px);
-    }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
 }

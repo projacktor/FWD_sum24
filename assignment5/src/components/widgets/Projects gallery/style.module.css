@@ -1,108 +1,108 @@
 /* style.module.css */
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin-top: -3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-top: -3rem;
 }
 
 .projects h1 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .projects_gallery {
-    width: 55rem;
-    height: 47rem;
-    background: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    padding: 2rem 3rem;
+  width: 55rem;
+  height: 47rem;
+  background: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2rem 3rem;
 }
 
 .rightMover {
-    rotate: 180deg;
+  rotate: 180deg;
 }
 
 .mover {
-    background: transparent;
+  background: transparent;
 }
 
 .moveRight,
 .moveLeft {
-    background: transparent;
-    border-color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 
 .gallery_scroller {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    margin-top: -2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: -2rem;
 }
 
 .gallery_arrows {
-    order: 1;
+  order: 1;
 }
 
 .gallery_pointer {
-    order: 2;
+  order: 2;
 }
 
 .gallery {
-    width: 100%;
-    min-height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
+  width: 100%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .gallery h2 {
-    color: white;
-    font-size: 3rem;
+  color: white;
+  font-size: 3rem;
 }
 
 .gallery p {
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .gallery a {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #D2691E;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #d2691e;
 }
 
 .gallery_heads {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .gallery_desc_stack {
-    color: #4169E1;
+  color: #4169e1;
 }
 
 .gallery_header:not(:first-child),
 .gallery_img:not(:first-child),
 .gallery_para:not(:first-child) {
-    display: none;
+  display: none;
 }
 
 .gallery_img {
-    /*background: red;*/
-    width: 341px;
-    height: 341px;
+  /*background: red;*/
+  width: 341px;
+  height: 341px;
 }
 
 .gallery_img img {
-    width: inherit;
-    height: inherit;
+  width: inherit;
+  height: inherit;
 }
