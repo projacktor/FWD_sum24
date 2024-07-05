@@ -28,10 +28,10 @@
     }
 }
 
-#typing_text_greeting {
+.typing_text_greeting {
     order: 0;
     background-color: #fff;
     color: black;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 

@@ -19,7 +19,7 @@ function TypingGreeting() {
                 <Image alt="Lyceum picture" src={li7Ico as string} className={`${imagesVisible ? "" : local_style.hidden} ${local_style.li7}`}/>
                 <Image alt="IU picture" src={iuIco as string} className={`${imagesVisible ? "" : local_style.hidden} ${local_style.iu}`}/>
             </div>
-            <div id="typing_text_greeting" className={typing_style.typing}>{displayedText}</div>
+            <div className={`${typing_style.typing} ${local_style.typing_text_greeting}`}>{displayedText}</div>
         </div>
     );
 }
