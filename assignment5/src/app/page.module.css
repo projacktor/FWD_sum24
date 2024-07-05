@@ -3,6 +3,14 @@
     font-size: 5rem;
   }
 
+  .type {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+
   .headers {
     /*margin-top: -2rem;*/
 
