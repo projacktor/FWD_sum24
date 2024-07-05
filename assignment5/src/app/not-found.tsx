@@ -9,7 +9,7 @@ function NotFound(props) {
         <main className={style.notFound}>
             <h1>404</h1>
             <h2><span className="pink">Sorry</span>, there <span className="pink">no</span> such page</h2>
-            <Image alt="page-not-found_picture" src={pic as string}/>
+            <Image alt="page-not-found_picture" src={pic as string} priority={true}/>
         </main>
     );
 }

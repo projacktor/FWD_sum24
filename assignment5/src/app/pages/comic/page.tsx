@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { getComicsId, getComics } from "@/functions/comics";
 import { formatDistanceToNow } from 'date-fns';
-import { Comic } from "@/interfaces/comic";
 import SwitchButton from "@/components/shared/Switch button/SwitchButton.tsx";
+import { Comic } from "@/interfaces/comic";
 
 import style from "./page.module.css";
 
@@ -31,7 +32,7 @@ const ComicComponent: React.FC = () => {
         return (
             <div className={style.comic}>
                 <h2>{comic.safe_title}</h2>
-                <img src={comic.img} alt={comic.alt} />
+                <Image src={comic.img} alt={comic.alt} width="500" height="500"/>
                 <time dateTime={date.toISOString()}>
                     {formatDistanceToNow(date, { addSuffix: true })}
                 </time>
