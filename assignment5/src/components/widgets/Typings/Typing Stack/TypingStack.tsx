@@ -1,7 +1,7 @@
 import local_style from './style.module.css';
 import typing_style from '../typing_style.module.css';
 
-import { useTypingEffect } from '@/functions/typing.ts';
+import { useTypingEffect } from '@/functions/typing';
 
 function TypingStack() {
   const text =
