@@ -1,10 +1,11 @@
-#stack {
+.stack {
     background: black;
 }
 
-#typing_text_stack {
+.typing_text_stack {
     background-color: black;
     color: #fff;
     padding-left: 0.5rem;
     padding-top: 2.5rem;
+    margin-top: 1rem;
 }

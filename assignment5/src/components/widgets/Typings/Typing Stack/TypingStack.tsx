@@ -1,7 +1,7 @@
-import "./style.css";
-import "../typing_style.module.css";
+import local_style from "./style.module.css";
+import typing_style from "../typing_style.module.css";
 
-import {useTypingEffect} from "../../../../functions/typing.ts";
+import {useTypingEffect} from "@/functions/typing.ts";
 
 function TypingStack() {
     const text = "I have a year of freelance experience in GUI and front-end development.\n\n" +
@@ -11,8 +11,8 @@ function TypingStack() {
 
     const displayedText = useTypingEffect(text, 45);
     return (
-        <div className="typing_container container" id="stack">
-            <div id="typing_text_stack" className="typing">{displayedText}</div>
+        <div className={`${local_style.stack} ${typing_style.typing_container} ${typing_style.container}`}>
+            <div className={`${typing_style.typing} ${local_style.typing_text_stack}`}>{displayedText}</div>
         </div>
     );
 }

@@ -2,6 +2,7 @@
 
 import styles from "./page.module.css";
 import TypingGreeting from "@/components/widgets/Typings/Tiyping Greeting/TypingGreeting";
+import TypingStack from "@/components/widgets/Typings/Typing Stack/TypingStack";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
           <TypingGreeting/>
 
+          <TypingStack/>
       </main>
   );
 }
