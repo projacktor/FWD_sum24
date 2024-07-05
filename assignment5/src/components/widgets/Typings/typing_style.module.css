@@ -9,6 +9,8 @@
 .container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    /*background: #000000;*/
+    color: #ffffff;
 }
 
 .typing {

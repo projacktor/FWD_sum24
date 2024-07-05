@@ -14,7 +14,7 @@ function TypingGreeting() {
     const {displayedText, imagesVisible} = useTypingEffectWithImages(text, 25, 7);
 
     return (
-        <div className={`${typing_style.typing_container} ${typing_style.container} ${local_style.greeting_cont}`}>
+        <div className={`${local_style.greeting_cont} ${typing_style.typing_container} ${typing_style.container}`}>
             <div className={local_style.typing_img}>
                 <Image alt="Lyceum picture" src={li7Ico as string} className={`${imagesVisible ? "" : local_style.hidden} ${local_style.li7}`}/>
                 <Image alt="IU picture" src={iuIco as string} className={`${imagesVisible ? "" : local_style.hidden} ${local_style.iu}`}/>
