@@ -5,190 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59daa3aa-d969-4076-b700-f1f7471197f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/comic/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Switch button/SwitchButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Switch button/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Header/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Projects gallery/ProjectsGallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Projects gallery/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Typings/Tiyping Greeting/TypingGreeting.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Typings/Tiyping Greeting/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Typings/Typing Stack/TypingStack.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Typings/Typing Stack/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/Typings/typing_style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/comics.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/gallery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/functions/typing.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/comic.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/home.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/not-found.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/comic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/img/channel_icon-round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/js/comics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/js/gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/js/typing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/projects/MBT_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/projects/MBT_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/projects/RA_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/projects/RA_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/projects/converter_icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/projects/converter_icon.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/projects/rdb_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/projects/rdb_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/styles/comics_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/comic/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/styles/index_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/IU_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/IU_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/Li7ico.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Li7ico.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/githubIco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/githubIco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/mailIco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/mailIco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/moveArrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/moveArrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/scrollers/scroller.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/scrollers/scroller.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/public/svg/telegramIco.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/telegramIco.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/img/channel_icon-round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/projects/MBT_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/projects/RA_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/projects/converter_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/projects/rdb_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/IU_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/Li7ico.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/githubIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/mailIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/moveArrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/scrollers/scroller.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/assets/svg/telegramIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/comic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/public/styles/comics_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/public/styles/index_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/src/Comic.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/src/comics.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/src/gallery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/src/typing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/src/vite-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/.eslintrc.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/bun.lockb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/public/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/public/channel_icon-round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/img/channel_icon-round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/projects/MBT_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/projects/RA_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/projects/converter_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/projects/rdb_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/404.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/404.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/IU_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/Li7ico.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/githubIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/mailIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/moveArrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/scrollers/scroller.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/assets/svg/telegramIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/pages/404/PageNotFound.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/pages/404/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/pages/Comic/Comic.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/pages/Comic/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/pages/Home/Home.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/pages/Home/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/shared/Switch button/SwitchButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/shared/Switch button/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Header/Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Header/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Projects gallery/ProjectsGallery.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Projects gallery/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Typings/Tiyping Greeting/TypingGreeting.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Typings/Tiyping Greeting/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Typings/Typing Stack/TypingStack.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Typings/Typing Stack/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/components/widgets/Typings/typing_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/functions/comics.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/functions/gallery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/functions/typing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/interfaces/comic.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/interfaces/custom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/src/main.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/bun.lockb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/next.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/app/not-found.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/app/pages/comic/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/app/pages/comic/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/projects/MBT_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/projects/RA_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/projects/converter_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/projects/rdb_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/IU_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/Li7ico.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/githubIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/mailIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/moveArrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/scrollers/scroller.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/assets/svg/telegramIco.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/shared/Switch button/SwitchButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/shared/Switch button/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Header/Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Header/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Projects gallery/ProjectsGallery.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Projects gallery/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Typings/Tiyping Greeting/TypingGreeting.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Typings/Tiyping Greeting/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Typings/Typing Stack/TypingStack.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Typings/Typing Stack/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/components/widgets/Typings/typing_style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/functions/comics.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/functions/gallery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/functions/typing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/interfaces/comic.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/styles/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/styles/home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/src/styles/not-found.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment5/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab1/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab1/lab1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab1/lab1_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab1/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab3/chat_app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab3/chat_app/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab3/chat_app/server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab3/chat_app/server/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab3/chat_app/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/lab3/chat_app/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,30 +40,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "as5",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "20.11.1",
-    "javascript.nodejs.core.library.typings.version": "20.11.30",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "C:/Users/1234x/WebstormProjects/FWD",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\1234x\\WebstormProjects\\FWD\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;as5&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.30&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1234x/WebstormProjects/FWD&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\1234x\\WebstormProjects\\FWD\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1234x\WebstormProjects\FWD" />
@@ -288,6 +105,7 @@
       <workItem from="1719931088028" duration="7323000" />
       <workItem from="1720009153889" duration="725000" />
       <workItem from="1720164323409" duration="24729000" />
+      <workItem from="1720193996269" duration="483000" />
     </task>
     <servers />
   </component>

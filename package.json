@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --check . && eslint .",
-    "deploy": "bun run build && gh-pages -d dist",
+    "deploy": "bun run build && gh-pages -d out",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
