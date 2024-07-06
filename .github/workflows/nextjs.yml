@@ -53,6 +53,15 @@ jobs:
         with:
           node-version: '20'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+
+      - name: Run ESLint
+        run: npm run lint
+        continue-on-error: false
+
+      - name: Run Prettier
+        run: npm run prettier:check
+        continue-on-error: false
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
