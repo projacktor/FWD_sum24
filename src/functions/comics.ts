@@ -1,4 +1,4 @@
-import { Comic } from '../interfaces/comic';
+import { Comic } from '@/interfaces/comic';
 
 const email: string = 'a.galiev@innopolis.university';
 const api: string = 'https://fwd.innopolis.university/api/hw2';
@@ -7,7 +7,7 @@ const comicUrl: string = 'https://fwd.innopolis.university/api/comic';
 export async function getComicsId(): Promise<number | undefined> {
   try {
     const params = new URLSearchParams({ email: email });
-    const response = await fetch(`${api}?${params.toString()}`);
+    const response = await fetch(`${api}?email=${params.toString()}`);
     if (!response.ok) {
       throw new Error("Network isn't ok!");
     }
