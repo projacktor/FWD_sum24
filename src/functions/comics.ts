@@ -7,7 +7,7 @@ const comicUrl: string = 'https://fwd.innopolis.university/api/comic';
 export async function getComicsId(): Promise<number | undefined> {
   try {
     const params = new URLSearchParams({ email: email });
-    const response = await fetch(`${api}?email=${params.toString()}`);
+    const response = await fetch(`${api}?${params.toString()}`);
     if (!response.ok) {
       throw new Error("Network isn't ok!");
     }

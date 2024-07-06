@@ -49,16 +49,17 @@ const ComicComponent: React.FC = () => {
     const regex = /(\{{2}[^}]+\}{2})|(\[{2}[^]]+\]{2})|(\n)|([^{[]+)/g;
     const elements = [];
     let match;
+    let index = 0;
 
     while ((match = regex.exec(text)) !== null) {
       if (match[1]) {
-        elements.push(<em>{match[1].slice(2, -2)}</em>);
+        elements.push(<em key={index++}>{match[1].slice(2, -2)}</em>);
       } else if (match[2]) {
-        elements.push(<strong>{match[2].slice(2, -2)}</strong>);
+        elements.push(<strong key={index++}>{match[2].slice(2, -2)}</strong>);
       } else if (match[3]) {
-        elements.push(<br />);
+        elements.push(<br key={index++} />);
       } else if (match[4]) {
-        elements.push(match[4]);
+        elements.push(<span key={index++}>{match[4]}</span>);
       }
     }
 
