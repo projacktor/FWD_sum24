@@ -16,7 +16,7 @@ export async function getComicsId(): Promise<number | undefined> {
     return data;
   } catch (error) {
     console.error('Error fetching id', error);
-    alert('Look to console');
+    alert('Look to console error 1');
     return undefined;
   }
 }
@@ -32,7 +32,7 @@ export async function getComics(comicId: number): Promise<Comic | undefined> {
     return comicsData;
   } catch (error) {
     console.error('Error fetching data', error);
-    alert('Look to console');
+    alert('Look to console error 2');
     return undefined;
   }
 }
