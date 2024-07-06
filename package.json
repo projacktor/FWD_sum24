@@ -8,11 +8,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --check . && eslint .",
-<<<<<<< HEAD:assignment5/package.json
-    "deploy": "bun run build && gh-pages -d .next",
-=======
-    "deploy": "bun run build && gh-pages -d out",
->>>>>>> 87e102a885085a5983fbfa5ab29f761b9fe102fe:package.json
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
