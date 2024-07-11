@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { formatDistanceToNow } from 'date-fns';
 import { getComicsId, getComics } from '@/functions/comics';
@@ -5,7 +6,6 @@ import { Comic } from '@/interfaces/comic';
 import SwitchButton from '@/components/shared/Switch button/SwitchButton';
 
 import style from './page.module.css';
-
 
 export default async function ComicComponent() {
   const comic = await fetchData();
@@ -50,13 +50,22 @@ export default async function ComicComponent() {
   };
 
   return (
-    <main className={style.comics}>
-      <article className="comics_content">
-        {comic ? renderComic(comic) : <p>Loading...</p>}
-      </article>
+    <>
+      <Head>
+        <title>{comic ? comic.safe_title : 'Comic Page'}</title>
+        <meta
+          name="description"
+          content={comic ? comic.alt : 'A comic page description'}
+        />
+      </Head>
+      <main className={style.comics}>
+        <article className="comics_content">
+          {comic ? renderComic(comic) : <p>Loading...</p>}
+        </article>
 
-      <SwitchButton page_text="Main" page_link="/" />
+        <SwitchButton page_text="Main" page_link="/" />
     </main>
+    </>
   );
 }
 
