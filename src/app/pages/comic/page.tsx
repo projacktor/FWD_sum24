@@ -1,36 +1,19 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { getComicsId, getComics } from '@/functions/comics';
 import { formatDistanceToNow } from 'date-fns';
-import SwitchButton from '@/components/shared/Switch button/SwitchButton';
+import { getComicsId, getComics } from '@/functions/comics';
 import { Comic } from '@/interfaces/comic';
+import SwitchButton from '@/components/shared/Switch button/SwitchButton';
 
 import style from './page.module.css';
 
-const ComicComponent: React.FC = () => {
-  const [comic, setComic] = useState<Comic | null>(null);
 
-  useEffect(() => {
-    const loadComic = async () => {
-      const comicId = await getComicsId();
-      if (comicId) {
-        const comicData = await getComics(comicId);
-        if (comicData) {
-          setComic(comicData);
-        }
-      }
-    };
-
-    loadComic();
-  }, []);
-
+export default async function ComicComponent() {
+  const comic = await fetchData();
   const renderComic = (comic: Comic) => {
     const date = new Date(
       parseInt(comic.year),
       parseInt(comic.month) - 1,
-      parseInt(comic.day)
+      parseInt(comic.day),
     );
 
     return (
@@ -46,7 +29,7 @@ const ComicComponent: React.FC = () => {
   };
 
   const parseComicText = (text: string) => {
-    const regex = /(\{{2}[^}]+\}{2})|(\[{2}[^]]+\]{2})|(\n)|([^{[]+)/g;
+    const regex = /(\{{2}[^}]+}{2})|(\[{2}[^]]+]{2})|(\n)|([^{[]+)/g;
     const elements = [];
     let match;
     let index = 0;
@@ -75,6 +58,15 @@ const ComicComponent: React.FC = () => {
       <SwitchButton page_text="Main" page_link="/" />
     </main>
   );
-};
+}
 
-export default ComicComponent;
+async function fetchData(): Promise<Comic | null> {
+  const comicId = await getComicsId();
+
+  if (comicId) {
+    const comicData = await getComics(comicId);
+    return comicData || null;
+  }
+
+  return null;
+}
