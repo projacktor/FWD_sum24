@@ -1,6 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Arsen Galiev's personalpage
+
+## About
+This is my first approach to make a personal web-site The project was built during Front-end Web-development summer course in Innopolis University in 2024 year. The web-site was upgraded from:
+
+`HTML5 + CSS3 + JavaScript`
+
+then
+
+`HTML5 + CSS3 + TypeScript`
+
+then
+
+`React + TypeScript + Vite`
+
+finally
+
+`NextJS`
+
+The web-site deployed on [Vercel](https://arsengaliev-lkd855xhs-arsens-projects-b805d62f.vercel.app/) and [GitHub pages](https://projacktor.github.io/FWD_sum24/)
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -20,17 +40,33 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Author: Arsen Galiev
+[![Telegram](https://img.shields.io/badge/Telegram-000000?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rosehipbloom)
 
-To learn more about Next.js, take a look at the following resources:
+[![Outlook](https://img.shields.io/badge/Microsoft_Outlook-000000?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:a.galiev@innopolis.university)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![GitLab](https://img.shields.io/badge/gitlab-000000.svg?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.pg.innopolis.university/a.galiev)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![Github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/projacktor)
 
-## Deploy on Vercel
+## Applied technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Bun][Bun.js]][Bun-url]
+[![Next][Next.js]][Next-url]
+[![TypesScript][TypeScript-logo]][TypeScript-url]
+[![React][React-logo]][React-url]
+[![GitHub Pages][GitHub-logo]][GitHub-url]
+[![Vercel][Vercel-logo]][Vercel-url]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=#41b883
+[Next-url]: https://nuxt.com/
+[Bun.js]: https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white
+[Bun-url]: https://bun.sh/
+[TypeScript-logo]: https://img.shields.io/badge/typescript-000000.svg?style=for-the-badge&logo=typescript&logoColor=%23007ACC
+[TypeScript-url]: https://www.typescriptlang.org/
+[React-logo]: https://img.shields.io/badge/react-000000.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[React-url]: https://react.dev/
+[GitHub-logo]: https://img.shields.io/badge/github%20pages-000000?style=for-the-badge&logo=github&logoColor=white
+[GitHub-url]: https://pages.github.com
+[Vercel-logo]: https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com
