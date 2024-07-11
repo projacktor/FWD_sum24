@@ -1,6 +1,7 @@
 # Arsen Galiev's personalpage
 
 ## About
+
 This is my first approach to make a personal web-site The project was built during Front-end Web-development summer course in Innopolis University in 2024 year. The web-site was upgraded from:
 
 `HTML5 + CSS3 + JavaScript`
@@ -20,6 +21,7 @@ finally
 The web-site deployed on [Vercel](https://arsengaliev-lkd855xhs-arsens-projects-b805d62f.vercel.app/) and [GitHub pages](https://projacktor.github.io/FWD_sum24/)
 
 ## Getting Started
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
@@ -41,6 +43,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Contact author: Arsen Galiev
+
 [![Telegram](https://img.shields.io/badge/Telegram-000000?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rosehipbloom)
 
 [![Outlook](https://img.shields.io/badge/Microsoft_Outlook-000000?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:a.galiev@innopolis.university)

@@ -13,7 +13,7 @@ export default async function ComicComponent() {
     const date = new Date(
       parseInt(comic.year),
       parseInt(comic.month) - 1,
-      parseInt(comic.day),
+      parseInt(comic.day)
     );
 
     return (
@@ -64,7 +64,7 @@ export default async function ComicComponent() {
         </article>
 
         <SwitchButton page_text="Main" page_link="/" />
-    </main>
+      </main>
     </>
   );
 }

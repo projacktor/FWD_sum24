@@ -15,9 +15,7 @@ function SwitchButton({ page_link, page_text }: SwitchButtonProps) {
     //   <Link href={page_link}>{page_text}</Link>
     // </button>
     <Link href={page_link}>
-      <button className={style.switch_comics}>
-        {page_text}
-      </button>
+      <button className={style.switch_comics}>{page_text}</button>
     </Link>
   );
 }

@@ -8,12 +8,15 @@ import { Author } from 'next/dist/lib/metadata/types/metadata-types';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const author: Author = {url: "https://github.com/prjacktor", name: "Arsen Galiev"};
+const author: Author = {
+  url: 'https://github.com/prjacktor',
+  name: 'Arsen Galiev',
+};
 
 export const metadata: Metadata = {
   title: "Arsen's web-site",
   authors: author,
-  icons: "/src/app/favicon.ico",
+  icons: '/src/app/favicon.ico',
   description: "Arsen Galiev's private page",
 };
 
@@ -22,7 +25,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   const authorContent = Array.isArray(metadata.authors)
     ? metadata.authors.map((author) => author.name).join(', ')
     : metadata.authors?.name;
@@ -30,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta name="author" content={authorContent}/>
+        <meta name="author" content={authorContent} />
         {/*<meta name="description" content={metadata.description?.toString()}/>*/}
         <link rel="icon" href="/src/app/favicon.ico" type="image/x-icon" />
       </Head>
